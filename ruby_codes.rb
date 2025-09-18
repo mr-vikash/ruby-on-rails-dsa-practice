@@ -8,3 +8,24 @@ def check_prime(n)
 end
 
 p check_prime(11)
+
+#reverse string without using builin method
+
+def reverse_string(str)
+    rev = ""
+    (str.length-1).downto(0) do |i|
+        rev += str[i]
+    end
+    rev
+end
+
+
+def reverse_string(str)
+    rev = ""
+    (str.length-1).downto(0) do |i|
+        rev += str[i]
+    end
+    rev
+end
+
+p reverse_string("vikash")
