@@ -29,3 +29,14 @@ def reverse_string(str)
 end
 
 p reverse_string("vikash")
+
+def check_anagram(str1, str2)
+    return "not anagram" if str1.length != str2.length
+    char_arr = str1.chars
+    (0..str2.length  - 1).each  do |i|
+        return "not anagram" unless char_arr.include?(str2[i])
+    end
+    "it is a anagram string"
+end
+
+p check_anagram("Vikash", "hsaiVk")
