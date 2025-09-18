@@ -62,3 +62,18 @@ def find_fibo(n)
 end
 
 find_fibo(10)
+
+#program to check string is palindrome or not 
+
+def check_palindrome(str)
+    start = 0
+    last = str.length - 1
+    while(start < last)
+        return "not palindrome" unless str[start] == str[last]
+        start += 1
+        last -= 1
+    end
+    "palindrom string"
+end
+
+p check_palindrome("viv")
