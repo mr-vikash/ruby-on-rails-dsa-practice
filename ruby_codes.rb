@@ -45,3 +45,20 @@ def find_fact(n)
 end
 
 p find_fact(5)
+
+
+#code to find fibonacci sequence upto n terms
+def find_fibo(n)
+    first = 0
+    second = 1
+    p "_______fibonacci sequence_________"
+    puts first
+    puts second
+    (1..n -2).each do |i|
+        puts first + second
+        first = second
+        second = i
+    end 
+end
+
+find_fibo(10)
