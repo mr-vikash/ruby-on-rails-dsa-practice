@@ -19,16 +19,9 @@ def reverse_string(str)
     rev
 end
 
-
-def reverse_string(str)
-    rev = ""
-    (str.length-1).downto(0) do |i|
-        rev += str[i]
-    end
-    rev
-end
-
 p reverse_string("vikash")
+
+#check anagram string
 
 def check_anagram(str1, str2)
     return "not anagram" if str1.length != str2.length
@@ -40,3 +33,15 @@ def check_anagram(str1, str2)
 end
 
 p check_anagram("Vikash", "hsaiVk")
+
+
+#find factorial of any number
+def find_fact(n)
+    return 1 if n==0 || n==1
+    (n-1).downto(1) do |i|
+        n *=i
+    end
+    return n
+end
+
+p find_fact(5)
